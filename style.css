@@ -1,0 +1,288 @@
+/* for logo */
+
+.rounded {
+    border-radius: 50%;
+}
+
+
+/* css */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* css Variables */
+
+:root {
+    --navbar-height: 59px;
+    --footer-height: bottom;
+}
+
+
+/* nav bar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+#navbar::before {
+    content: "";
+    background-color: orange;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+/* nav bar logo and image */
+
+#Logo {
+    margin: 5px;
+}
+
+#Logo img {
+    margin: 0px;
+    height: 30px;
+    width: 30px;
+}
+
+
+/* navigation bar: list styling */
+
+
+/* #navbar {
+    position: relative;
+} */
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 2px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+
+/* when we go on to that icons it changes */
+
+#navbar ul li a:hover {
+    background-color: black;
+}
+
+
+/* Home section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 653px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('mainpage.jpg');
+    /* if it is in diferent directory then we use ".." */
+    position: absolute;
+    height: 110%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.95;
+}
+
+#home p {
+    color: rgb(205, 125, 4);
+    text-align: center;
+    font-size: 1.3rem;
+    /* text-shadow: 0.5px 0.5px rgb(255, 255, 255); */
+}
+
+#home h1 {
+    color: rgb(234, 40, 169);
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+
+/* services */
+
+#services {
+    margin: 0px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid black;
+    padding: 30px;
+    margin: 3px 6px;
+    background: rgb(250, 240, 240);
+    border-radius: 23px;
+}
+
+#services .box:hover {
+    background-color: aquamarine;
+}
+
+#services .box img {
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+
+#services .center p {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+#services {}
+
+#services {}
+
+#services {}
+
+
+/* clints section */
+
+#client-section {
+    height: 300px;
+}
+
+
+/* #client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../images/clients_bg.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+} */
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+#clients img {
+    height: 110px;
+}
+
+
+/* contact section */
+
+#contact {
+    position: relative;
+}
+
+#contact {
+    content: "";
+    position: absolute;
+    background: url('contact\ us-2.1.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+#contact-box input,
+#contact-boxtextarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+}
+
+#contact-box label {
+    color: aliceblue;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.2rem;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+
+/* utility classes */
+
+.h-primary {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2.5rem;
+    padding: 55px;
+}
+
+.h-secondary {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2.5rem;
+    padding: 20px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid yellow;
+    background-color: white;
+    border-radius: 15px;
+    margin: 20px auto;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: pink;
+}
+
+.center {
+    text-align: center;
+}
+
+.box {
+    font-size: 1.6rem;
+    padding: 0px 0px 0px 0px;
+}
+
+.footer {
+    text-align: center;
+    padding: 100px;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: white;
+    display: flex;
+    bottom: 0;
+    justify-content: center;
+}
+
+
+/* .h-primary_center {
+    font-size: 2.5rem;
+    padding: 20px;
+    margin-top: 0px;
+} */
